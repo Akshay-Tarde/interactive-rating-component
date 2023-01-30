@@ -13,6 +13,24 @@ body {
     background-color: hsl(216, 12%, 8%);
 }
 
+/* Typography */
+.title {
+    color: hsl(0, 0%, 100%);
+}
+
+.subtitle,
+.rating span {
+    color: hsl(216, 12%, 54%);
+}
+
+.submit {
+    color: white;
+}
+
+.attribution {
+    color: white;
+}
+
 /* Layout */
 .container {
     background-color: hsl(213, 19%, 18%);
