@@ -13,17 +13,21 @@ body {
     background-color: hsl(216, 12%, 8%);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Typography */
 .title {
     color: hsl(0, 0%, 100%);
 }
 
 .subtitle,
-.rating span {
-    color: hsl(217, 12%, 63%);
+.rating-btn {
+    color: hsl(216, 12%, 54%);
 }
 
-.submit {
+.submit-btn {
     color: white;
 }
 
@@ -34,23 +38,68 @@ body {
 /* Layout */
 .container {
     background-color: hsl(213, 19%, 18%);
-    width: 50%;
+    max-width: 400px;
     margin: 0 auto;
     padding: 2em;
     border-radius: 25px;
 }
 
 /* Styling spans/numbers and the star svg */
-span {
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    background-color: hsl(222, 12%, 22%);
-}
+
 
 .rating {
     display: flex;
     justify-content: space-between;
+    margin: 1.5em 0;
+}
+
+
+.rating-btn,
+.svg-div {
+    /* padding: 20px; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: hsl(222, 12%, 22%);
+    border: 0;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-btn {
+    color: hsl(216, 12%, 54%);
+}
+
+/* Buttons */
+.rating-btn:focus,
+.rating-btn:hover {
+    background: hsl(25, 97%, 53%);
+    font-weight: 700;
+    color: white;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: .7em 40%;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+    color: hsl(25, 97%, 53%);
+    background: white;
+}
+
+.selected-btn {
+    background: hsl(217, 12%, 63%);
+    color: white;
+    font-weight: 700;
 }
