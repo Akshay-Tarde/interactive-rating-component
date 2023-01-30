@@ -20,7 +20,7 @@ body {
 
 .subtitle,
 .rating span {
-    color: hsl(216, 12%, 54%);
+    color: hsl(217, 12%, 63%);
 }
 
 .submit {
@@ -38,4 +38,19 @@ body {
     margin: 0 auto;
     padding: 2em;
     border-radius: 25px;
+}
+
+/* Styling spans/numbers and the star svg */
+span {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: hsl(222, 12%, 22%);
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
 }
