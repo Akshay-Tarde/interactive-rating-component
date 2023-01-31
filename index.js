@@ -33,5 +33,10 @@ function toggleSubmit() {
     isSubmit = true;
     ratingState.style.display = 'none';
     thankYouState.style.display= 'grid';
+    document.querySelector('.result-span').textContent = `You selected ${selectedButton.textContent || '4' } out of 5`;
 }
 submitBtn.addEventListener('click', toggleSubmit);
+
+//  Getting the result span to display the rating clicked
+//const resultSpan = document.querySelector('.result-span');
+//resultSpan.textContent
