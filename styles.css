@@ -98,7 +98,7 @@ a {
     background: white;
 }
 
-.selected-btn {
+#selected-btn {
     background: hsl(217, 12%, 63%);
     color: white;
     font-weight: 700;
