@@ -11,6 +11,7 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: hsl(216, 12%, 8%);
+    margin: 0;
 }
 
 a {
