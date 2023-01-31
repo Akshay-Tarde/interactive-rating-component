@@ -30,13 +30,15 @@ const submitBtn = document.querySelector('.submit-btn');
 const ratingState = document.querySelector('.rating-state');
 const thankYouState = document.querySelector('.thank-you-state');
 function toggleSubmit() {
-    isSubmit = true;
-    ratingState.style.display = 'none';
-    thankYouState.style.display= 'grid';
-    document.querySelector('.result-span').textContent = `You selected ${selectedButton.textContent || '4' } out of 5`;
+    if(selectedButton != null) {
+        isSubmit = true;
+        ratingState.style.display = 'none';
+        thankYouState.style.display= 'grid';
+        //  Getting the result span to display the rating clicked
+        document.querySelector('.result-span').textContent = `You selected ${selectedButton.textContent } out of 5`;
+    }
+    else if(selectedButton == null) {
+        alert("You haven't selected a button. Please select a button!");
+    }
 }
 submitBtn.addEventListener('click', toggleSubmit);
-
-//  Getting the result span to display the rating clicked
-//const resultSpan = document.querySelector('.result-span');
-//resultSpan.textContent

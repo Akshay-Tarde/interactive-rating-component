@@ -128,3 +128,18 @@ a {
     margin: 1em 0;
     justify-self: center;
 }
+
+/* Attribution */
+.attribution {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(25, 97%, 53%);
+}
+
+.attribution a:focus,
+a:hover {
+    color: white;
+}
