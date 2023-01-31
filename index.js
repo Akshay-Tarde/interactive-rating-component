@@ -23,3 +23,15 @@ function getRating(event) {
 }
 ratingButtons.forEach(item => item.addEventListener('click', getRating));
 
+// Making conditional rendering of the components
+
+let isSubmit = false;
+const submitBtn = document.querySelector('.submit-btn');
+const ratingState = document.querySelector('.rating-state');
+const thankYouState = document.querySelector('.thank-you-state');
+function toggleSubmit() {
+    isSubmit = true;
+    ratingState.style.display = 'none';
+    thankYouState.style.display= 'grid';
+}
+submitBtn.addEventListener('click', toggleSubmit);

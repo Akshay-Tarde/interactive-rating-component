@@ -38,7 +38,7 @@ a {
 /* Layout */
 .container {
     background-color: hsl(213, 19%, 18%);
-    max-width: 400px;
+    width: 400px;
     margin: 0 auto;
     padding: 2em;
     border-radius: 25px;
@@ -102,4 +102,29 @@ a {
     background: hsl(217, 12%, 63%);
     color: white;
     font-weight: 700;
+}
+
+
+/* Thank you state */
+.thank-you-state {
+    text-align: center;
+    opacity: .9;
+    display: grid;
+    display: none;
+}
+
+.result {
+    margin-top: 2em;
+}
+
+.result-span {
+    color: hsl(25, 97%, 53%);
+    background: hsl(222, 12%, 22%);
+    padding: .7em 1.5em;
+    border-radius: 20px;
+}
+
+.ty-state-svg {
+    margin: 1em 0;
+    justify-self: center;
 }
